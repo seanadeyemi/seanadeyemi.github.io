@@ -37,12 +37,13 @@
 
 **********************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,400i,700,700i,900,900i|Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,400i,700,700i,900,900i|Poppins:300,400,500,600,700|Raleway:100,200,300,400,600');
 
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
+font-family: 'Raleway, sans-serif;
 */
 
 @import url('font-awesome.css');
@@ -529,7 +530,7 @@ img{
 	position:relative;
 	float:left;
 	margin-left:20px;
-	padding:10px 0px;	
+	padding:15px 0px 0px;	
 }
 
 .main-header .header-top-two .social-links li{
@@ -680,21 +681,62 @@ img{
 	background:#ffffff;
 	border-bottom:1px solid #e0e0e0;
 }
+@media all and (max-width: 660px) {
 
+	.larger-hdr{
+		
+		display:block;
+		max-width:20%;
+		
+	}
+
+	.smaller-hdr{
+	    
+	    display: block;
+	    max-width: 10%;
+	}
+
+}
 .main-header .logo-outer{
-	position:relative;
+	/*position:relative;*/
 	float: left;
-	z-index:25;	
+	z-index:25;
+	position: fixed;
+ 	top: 0.01em;
+ 	left: 1em;
+ 	display: inline;
 }
 
 .header-style-three .logo-outer{
 	padding:5px 0px;
 }
-
-.main-header .logo-outer .logo img{
+/*main-header .logo-outer .logo img*/
+.larger-hdr{
 	position:relative;
 	display:inline-block;
-	max-width:100%;
+	max-width:40%;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.smaller-hdr{
+    position: relative;
+    display: inline-block;
+    max-width: 15%;
+}
+
+.add_border::after 
+{
+    content: "";
+    background: #878787;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 61%;
+    width: 1px;
 }
 
 .header-style-two .nav-toggler{
@@ -1676,8 +1718,8 @@ img{
 
 .static-banner .text-content{
 	position:relative;
-	font-size:18px;
-	font-weight:400;
+	font-size:28px;
+	font-weight:200;
 	line-height:1.8em;
 	margin-bottom:40px;
 	color:#ffffff;
@@ -1921,11 +1963,12 @@ img{
 
 .title-style-one .sub-title{
 	position:relative;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
 	font-size:24px;
 	color:#979696;
-	font-style:italic;
-	line-height:1.4em;	
+	font-style:normal;
+	line-height:1.4em;
+	font-weight: 300;
 }
 
 .title-style-one.light .sub-title{
@@ -1933,6 +1976,7 @@ img{
 }
 
 .property-to-sell .title-style-one{
+	padding-bottom: 20px;
 	margin-bottom:0px;	
 }
 
@@ -1954,7 +1998,7 @@ img{
 	font-size:60px;
 	line-height:1em;
 	font-weight:700;
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 
 .property-to-sell .content-box .text{
@@ -2030,7 +2074,7 @@ img{
 
 .property-to-sell .right-column .image-box .ribbon{
 	position:absolute;
-	left:-50px;
+	left:-100px;
 	top:-11px;
 	width:100%;
 	height:50px;
@@ -2045,7 +2089,7 @@ img{
 .property-to-sell .right-column .image-box .image-caption{
 	position:absolute;
 	left:0px;
-	bottom:20px;
+	bottom:0px;
 	width:100%;
 	text-align:center;
 	z-index:1;
@@ -2062,7 +2106,7 @@ img{
 
 .property-to-sell .right-column .image-box .image-caption .txt{
 	font-size:14px;
-	color:#1AA3F1;
+	color:#AEAFAE;
 	font-weight:400;
 	line-height:1.8em;
 }
@@ -4280,7 +4324,7 @@ img{
 }
 
 .locations-gallery .location-item .caption-box .property-count{
-	font-size:12px;
+	font-size:8px;
 	color:#ffffff;
 	line-height:20px;
 }
@@ -5410,6 +5454,183 @@ img{
 	height:100%;
 	background:rgba(24,22,22,0.50);	
 }
+/*** 
+
+====================================================================
+	Subscribe Form Styling
+====================================================================
+
+***/
+
+.subscribe-form .form-group{
+	position:relative;
+	margin-bottom:15px;	
+}
+
+.subscribe-form .form-group .field-inner{
+	position:relative;
+}
+
+.subscribe-form .form-group .field-inner .input-icon{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -10px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #1AA3F1;
+}
+
+.subscribe-form .field-label{
+	display:block;
+	line-height:24px;
+	margin-bottom:10px;
+	color:#777777;
+	font-weight:400;
+	font-size:16px;
+}
+
+.subscribe-form .form-group .field-label sup,
+.subscribe-form .form-group .field-label .req{
+	color:#1AA3F1;
+	font-size:16px;
+	padding-left:3px;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"],
+.subscribe-form input[type="password"],
+.subscribe-form input[type="tel"],
+.subscribe-form input[type="url"],
+.subscribe-form select,
+.subscribe-form textarea{
+	display:block;
+	width:100%;
+	line-height:24px;
+	height:46px;
+	font-size:14px;
+	border:1px solid #e0e0e0;
+	padding:10px 20px;
+	color:#222222;
+	background:none;
+	border-radius:2px;
+	transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;	
+}
+
+.subscribe-form select{
+	cursor:pointer;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	background:#ffffff url(../images/icons/icon-select-2.png) right center no-repeat;
+}
+
+.subscribe-form textarea{
+	height:170px;
+	resize:none;
+	margin-bottom:15px;
+}
+
+.subscribe-form select option{
+	text-indent:20px;
+	color:#222222;	
+}
+
+.subscribe-form input:focus,
+.subscribe-form select:focus,
+.subscribe-form textarea:focus{
+	border-color:#1AA3F1;	
+}
+
+.subscribe-form input.error,
+.subscribe-form select.error,
+.subscribe-form textarea.error{
+	border-color:#ff0000 !important;	
+}
+
+.subscribe-form label.error{
+	display:block;
+	line-height:24px;
+	padding:5px 0px 0px;
+	margin:0px;
+	text-transform:capitalize;
+	font-size:13px;
+	color:#ff0000;
+	font-weight:400;	
+}
+
+.subscribe-form .check-box{
+	position:relative;
+	padding:15px 0px 0px;	
+}
+
+.subscribe-form .check-box input{
+	position:absolute;
+	opacity:0;
+	visibility:hidden;	
+}
+
+.subscribe-form .check-box label{
+	position:relative;
+	display:block;
+	font-weight:normal;
+	padding-left:26px;
+	font-size:14px;
+	line-height:24px;
+	cursor:pointer;
+}
+
+.subscribe-form .check-box input:checked + label{
+	color:#1AA3F1;
+}
+
+.subscribe-form .check-box label .icon{
+	position:absolute;
+	left:0px;
+	top:4px;
+	display:block;
+	width:16px;
+	height:16px;
+}
+
+.subscribe-form .check-box label .square{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:14px;
+	height:14px;
+	border:1px solid #eeeeee;
+}
+
+.subscribe-form .check-box label .fa{
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#1AA3F1;
+	padding-right:2px;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	font-size:10px;
+	text-align:center;
+	opacity:0;
+}
+
+.subscribe .check-box input:checked + label .fa{
+	opacity:1;
+}
+
+.subscribe-form .theme-btn{
+	font-size:14px;
+	text-transform:capitalize;
+	padding:8px 40px;	
+}
+
+
 
 /*** 
 
@@ -5418,6 +5639,76 @@ img{
 ====================================================================
 
 ***/
+#myModal
+{
+	z-index: 1200;
+}
+
+.subs-hdr
+{
+	text-align: center;
+	font-weight: 400;
+}
+
+.dim-color
+{
+	color: #aeafae;
+
+}
+.details-text
+{
+	font-size: 20px;
+	padding: 30px 0px;
+}
+
+
+.vo-details .vo-title
+{
+	color: #4c4848;	
+	font-size: 32px;
+	font-weight: 200;
+	line-height: 1em;
+	padding: 15px 0px;
+	display: inline-block;
+	border-bottom: 2px solid #bbbbbb;
+}
+
+.vo-item
+{
+	border-bottom: 1px solid #e0e0e0;
+}
+.vo-item div:first-child
+{
+	text-align: center;
+}
+
+.last-item
+{
+	margin-bottom: 100px;
+	border-bottom: none;
+}
+
+.vo-item h2:first-child
+{
+	color: #4c4848;	
+	font-size: 65px;
+	font-weight: 700;
+	line-height: 1em;
+	padding: 0px 0px;
+	text-align: center;
+}
+
+.title-style-one .sub-title .smaller
+{
+	font-size: 20px;
+}
+
+.title-style-one .sub-title span
+{
+	color: #4c4848;
+}
+
+
 
 .property-info-section{
 	position:relative;
@@ -5532,6 +5823,16 @@ img{
 ====================================================================
 
 ***/
+.static-banner .text-content .company-name
+{
+	font-weight: 600;
+}
+
+.social-links .fa
+{
+	font-size: 24px;
+}
+
 .clearance
 {
 	margin: 150px 20px;
@@ -5611,7 +5912,7 @@ margin: 0 auto 10px;
 
 .product-section-two .info-block .inner-box{
 	position:relative;
-	padding:1px 1px 20px;
+	padding:0px 0px 20px;
 	overflow:hidden;
 	border:1px solid transparent;
 	color:#333333;
