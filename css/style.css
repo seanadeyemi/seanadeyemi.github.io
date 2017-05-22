@@ -5657,30 +5657,74 @@ padding-right: 70px;
 {
 
 }
+.vbanner-link
+{
+	position: absolute;
+}
+
 .static-banner .right-column img
 {
 	padding-bottom: 50px;
 	margin-top: -50px;
+/*	border: 1px solid transparent;*/
+/*background: rgba(29,28,28,0.85);
+
+	transition: all 500ms ease;*/
+}
+.static-banner .right-column img:hover
+{
+/*	border-color: #1AA3F1;*/
+/*opacity: 1;*/
 }
 .static-banner .right-column a
 {
-	border: 1px solid transparent;
-	transition: all 500ms ease;
+	
 }
 
 .static-banner .right-column a:hover
 {
-	border-color: #1AA3F1;
+	
 }
 
 .side-banner
 {
 	position: relative;
-	bottom: 20px;
+	display: block;
+	bottom: 48px;
 	height: 400px;
 }
+.side-banner:hover .vbanner-link
+{
+	opacity: 1;
 
+}
 
+.side-banner .vbanner-link
+{
+	opacity: 0;
+	position: absolute;
+	left: 5px;
+	bottom: 36px;
+	width: 320px;
+	height: 410px;
+	color: #ffffff;
+	font-size: 30px;
+	text-align: center;
+	background: rgba(130, 97, 13, 0.85);
+	transition: all 500ms ease;
+}
+.v-icon 
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -40px;
+}
 .subs-hdr
 {
 	text-align: center;
