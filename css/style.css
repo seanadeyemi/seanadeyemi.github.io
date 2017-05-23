@@ -3371,6 +3371,7 @@ img{
 	position:relative;
 	font-size:15px;
 	line-height:1.8em;
+	color: #4c4848;
 }
 
 /***
@@ -5713,6 +5714,26 @@ padding-right: 70px;
 	background: rgba(130, 97, 13, 0.85);
 	transition: all 500ms ease;
 }
+.sub-bg
+{
+	background-image: url(../images/resource/radek.jpg);
+	
+    position: relative;
+   /* padding: 0px 0px 0px;*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    width: 100%;
+   /* margin-bottom: 60px;*/
+
+}
+.subs-sub-text
+{
+	font-size: 15px;
+	color: #e0e0e0;
+}
+
 .v-icon 
 {
     position: absolute;
@@ -5729,8 +5750,38 @@ padding-right: 70px;
 {
 	text-align: center;
 	font-weight: 400;
+	/*background: #1AA3F1 url(../images/background/pattern-1.png) center left no-repeat;*/
+	color: #ffffff;
 }
 
+.modal-header
+{
+	background-color: #82610D;
+}
+.modal-footer
+{
+	background-color: #e0e0e0;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
 .dim-color
 {
 	color: #aeafae;
@@ -5957,8 +6008,8 @@ padding-right: 70px;
         background-size: auto auto;
         min-height: 0px;
 		max-height: none;
-		height: 76px;
-		line-height: 1;
+	/*	height: 76px;*/
+		line-height: 30px;
 		color: #fff;
 		margin: 0 0 17px;
 		padding: 15px 10px;
