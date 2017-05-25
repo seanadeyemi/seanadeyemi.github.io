@@ -3098,7 +3098,7 @@ img{
 	width:10px;
 	height:10px;
 	border:1px solid #1AA3F1;
-	background:#555555;
+	background:#fff;
 }
 
 .testimonial-style-one .owl-theme .owl-controls .owl-dots .owl-dot.active span,
@@ -5704,10 +5704,10 @@ padding-right: 70px;
 {
 	opacity: 0;
 	position: absolute;
-	left: 5px;
-	bottom: 36px;
-	width: 320px;
-	height: 410px;
+	left: 28px;
+	bottom: 22px;
+	width: 308px;
+	height: 398px;
 	color: #ffffff;
 	font-size: 30px;
 	text-align: center;
